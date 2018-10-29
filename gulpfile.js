@@ -49,7 +49,7 @@ gulp.task('copy-js', ['minify-js'],()=>{
 
 //CSS TASKS
 gulp.task('clean-css', ()=> {
-    return gulp.src('./src/css/', {read: false})
+    return gulp.src('./dist/css/', {read: false})
         .pipe(clean());
 });
 
