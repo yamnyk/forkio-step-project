@@ -42,10 +42,10 @@ gulp.task('minify-js', ['concat-js'], (cb) => {
     );
 });
 
-// gulp.task('copy-js', ['minify-js'],()=>{
-//     return gulp.src('./dist/js/**/script.js')
-//         .pipe(gulp.dest('./dist/js/'));
-// });
+gulp.task('copy-js', ['minify-js'],()=>{
+    return gulp.src('./dist/js/**/script.min.js')
+        .pipe(gulp.dest('./dist/js/'));
+});
 
 //CSS TASKS
 gulp.task('clean-css', ()=> {
