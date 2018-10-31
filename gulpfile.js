@@ -18,7 +18,7 @@ gulp.task('copy-html',()=>{
 
 //JS TASKS
 gulp.task('clean-js', ()=> {
-    return gulp.src('./dist/js/script.js', {read: false})
+    return gulp.src('./dist/js/script.min.js', {read: false})
         .pipe(clean());
 });
 
@@ -30,7 +30,7 @@ gulp.task('concat-js', ['clean-js'],()=>{
 
 gulp.task('minify-js', ['concat-js'], (cb) => {
     pump([
-            gulp.src('./dist/js/**/script.js'),
+            gulp.src('./dist/js/script.js'),
             clean(),
             uglify(),
             rename(function (path) { // function of rename extname for .css
@@ -42,14 +42,14 @@ gulp.task('minify-js', ['concat-js'], (cb) => {
     );
 });
 
-gulp.task('copy-js', ['minify-js'],()=>{
-    return gulp.src('./dist/js/**/script.min.js')
-        .pipe(gulp.dest('./dist/js/'));
-});
+// gulp.task('copy-js', ['minify-js'],()=>{
+//     return gulp.src('./dist/js/**/script.js')
+//         .pipe(gulp.dest('./dist/js/'));
+// });
 
 //CSS TASKS
 gulp.task('clean-css', ()=> {
-    return gulp.src('./dist/css/', {read: false})
+    return gulp.src('./src/css/', {read: false})
         .pipe(clean());
 });
 
@@ -98,7 +98,7 @@ gulp.task('serve', ['copy-html', 'copy-css', /*'copy-js'*/'minify-js', 'minify-i
 
     gulp.watch('./src/**/*.html',['copy-html']).on('change',browserSync.reload);
     gulp.watch('./src/scss/**/*.scss',['copy-css']).on('change',browserSync.reload);
-    gulp.watch('./src/js/**/*.js', ['copy-js']).on('change',browserSync.reload);
+    gulp.watch('./src/js/**/*.js', ['minify-js']).on('change',browserSync.reload);
 });
 
 //CLEAN DIST
