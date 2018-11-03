@@ -1,0 +1,23 @@
+.btn_subscribe {
+  border: none;
+  border-radius: 2rem;
+  text-transform: uppercase;
+}
+
+.price-plan {
+  &__buy-btn {
+    //display: inline-block;
+    padding: 2rem 5rem;
+    text-decoration: none;
+    @include fontProps($montserrat, 1.7rem, white);
+    background-color: #000;
+  }
+}
+
+.subscribe {
+  &-form {
+    &__btn {
+      padding: 1.5rem 4rem;
+    }
+  }
+}

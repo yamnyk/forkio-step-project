@@ -1,7 +1,6 @@
-.section-title-three {
-  font-weight: bold;
-  &__heading {
-    font-size: 30px;
-    color: blueviolet;
-  }
+.pricing {
+  background: url('/img/section-backgrounds/pricing__bg.jpeg') no-repeat top center;
+  background-size: cover;
+  height: 85rem;
+  margin-top: -1px;
 }

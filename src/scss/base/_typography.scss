@@ -1,0 +1,61 @@
+@include fontFace($montserrat, 'https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600,600i,700,800,800i,900');
+@include fontFace($lato, 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
+
+.section-title-three {
+  &__heading {
+    @include fontPropsWithWeight($montserrat, 4.5rem, white, 700);
+    text-align: center;
+  }
+}
+
+.mentions {
+  &__small-info {
+    @include fontProps($lato, 1.4rem, rgba(162, 145, 165, 0.8));
+    text-align: center;
+  }
+}
+
+.mentions-item {
+  &__text {
+    @include fontPropsWithWeight($lato, 1.6rem, white, 700);
+    font-style: italic;
+  }
+}
+
+.price-plan {
+  &__name {
+    @include fontProps($lato, 2.4rem, white);
+    text-transform: uppercase;
+  }
+  &__price {
+    @include fontPropsWithWeight($montserrat, 6rem, white, 700);
+  }
+  &-small-info {
+    @include fontProps($montserrat, 1.4rem, white);
+    text-transform: uppercase;
+  }
+  &__description {
+    @include fontProps($montserrat, 1.6rem, white);
+  }
+}
+
+.pricing-block {
+  &__currency {
+    font-weight: 400;
+  }
+}
+
+.subscribe {
+  &__title {
+    @include fontPropsWithWeight($montserrat, 3rem, $darkVioletTitle, 700);
+  }
+  &-form {
+    &__input {
+      color: #c8cbcf;
+      &::placeholder {
+        @include fontProps($montserrat, 1.4rem, $inputPlaceholderText);
+      }
+    }
+  }
+}
+
