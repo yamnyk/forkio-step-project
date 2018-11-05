@@ -4,13 +4,23 @@
   text-transform: uppercase;
 }
 
+
 .price-plan {
   &__buy-btn {
-    //display: inline-block;
-    padding: 2rem 5rem;
+    display: inline-block;
+    padding: 1.5rem 3.5rem;
     text-decoration: none;
-    @include fontProps($montserrat, 1.7rem, white);
-    background-color: #000;
+    text-transform: uppercase;
+    @include fontProps($montserrat, 1.5rem, white);
+    background-color: $purchaseBG;
+    border-radius: 3rem;
+  }
+}
+
+.pricing-block {
+  &__link_active {
+    font-size: 1.6rem;
+    padding: 1.8rem 5.1rem;
   }
 }
 
