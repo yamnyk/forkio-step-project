@@ -2,4 +2,57 @@
   background: url('/img/section-backgrounds/mentions__bg.jpeg') no-repeat bottom center;
   background-size: cover;
   height: 75rem;
+  display: grid;
+  grid-template-rows: 0.7fr 1.3fr 1fr;
+  align-content: space-around;
+
+  .section-title-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mentions-list {
+    display: grid;
+    grid-template-columns: 30rem 30rem 30rem;
+    grid-template-rows: 14rem 14rem;
+    grid-row-gap: 7rem;
+    grid-column-gap: 2rem;
+    justify-self: center;
+
+    .mentions-item {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-row-gap: 1rem;
+      align-self: center;
+      justify-items: center;
+      &_img {
+        display: grid;
+        align-self: center;
+      }
+
+      &__text {
+        display: grid;
+        text-align: center;
+      }
+    }
+  }
+
+  &__small-info {
+    display: grid;
+    grid-template-columns: 85rem;
+    align-self: center;
+    justify-self: center;
+
+    &:after {
+      content: '';
+      display: grid;
+      justify-self: center;
+      align-items: center;
+      width: 90%;
+      height: 0.1rem;
+      background-color: $mentionsUnderLine;
+      margin-top: 1.6rem;
+    }
+  }
 }
