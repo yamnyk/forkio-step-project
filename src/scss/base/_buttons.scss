@@ -20,14 +20,16 @@
 .pricing-block {
   &__link_active {
     font-size: 1.6rem;
-    padding: 1.8rem 5.1rem;
+    padding: 1.8rem 5rem;
   }
 }
 
 .subscribe {
   &-form {
     &__btn {
-      padding: 1.5rem 4rem;
+      @include fontProps($montserrat, 1.3rem, white);
+      padding: 1.35rem 4.038rem;
+      background-color: $logoViolet;
     }
   }
 }

@@ -47,9 +47,11 @@
 
 .subscribe {
   &__title {
+    display: inline-block;
     @include fontPropsWithWeight($montserrat, 3rem, $darkVioletTitle, 700);
   }
   &-form {
+    display: inline-block;
     &__input {
       color: #c8cbcf;
       &::placeholder {
