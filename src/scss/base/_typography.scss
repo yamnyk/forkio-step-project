@@ -59,3 +59,77 @@
   }
 }
 
+.footer {
+  &_logo-img {
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  &_logo-img {
+  }
+
+  &__text {
+    display: inline-block;
+    font-family: $montserrat, $ss;
+    color: $logoViolet;
+    text-transform: uppercase;
+
+    &_size-s {
+      font-size: 2.4rem;
+    }
+
+    &_dark {
+      color: $logoFooterDark;
+    }
+
+  }
+
+  &__logo-img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+}
+
+.site-description {
+  &__title {
+    @include fontProps($montserrat, 1.8rem, $vertNavDark)
+  }
+  &__text {
+    @include fontProps($montserrat, 1.4rem, $darkGreyText)
+  }
+}
+
+.vertical-navigation {
+  &__title {
+    @include fontProps($montserrat, 1.8rem, $vertNavDark)
+  }
+  .vertical-nav {
+    &__link {
+      text-decoration: none;
+      @include fontProps($montserrat, 1.4rem, $logoViolet)
+    }
+  }
+}
+
+.site-contacts {
+  .contact-phone {
+    &__number {
+      text-decoration: none;
+      @include fontPropsWithWeight($montserrat, 3rem, $phoneBig, 700)
+    }
+  }
+
+  .contact-address {
+    &__city {
+      @include fontProps($montserrat, 1.6rem, $vertNavDark)
+    }
+    &_city-place {
+      @include fontProps($montserrat, 1.4rem, $darkGreyText)
+    }
+  }
+}
+
