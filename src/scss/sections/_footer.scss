@@ -1,0 +1,20 @@
+.footer {
+  margin: 6rem;
+  &__list {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2.5fr 2fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .site-description {
+    display: grid;
+    grid-row-gap: 2rem;
+    justify-content: space-around;
+  }
+
+  .vertical-navigation {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+  }
+}
