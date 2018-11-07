@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Forkio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="#" class="logo header__logo">
+                    <div class="logo__logo-img"></div>
+                    <h2 class="logo__text">Forkio</h2>
+                </a>
+                <div class="header__flex-wrapper">
+                    <a href="#" class="btn btn_violet header__btn">Buy now</a>
+                    <div class="header__burger-menu" id="burgerMenuBtn"></div>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Overview</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">About Fork</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Buying Options</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-us">
+        <div class="container">
+            <div class="about-us__content">
+                <h2 class="about-us__title">Fork App</h2>
+                <p class="about-us__slogan">A Real Gamechanger In The World Of Web-Development</p>
+                <p class="about-us__small-info">v. 2.8 For Mac and Windows</p>
+                <div class="b-download-btn">
+                    <a href="#" class="btn btn_violet btn_download">Download For Free Now</a>
+                    <p class="b-download-btn__info">Unlimited 30-Days Trial Period</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about-product">
+        <div class="container">
+            <div class="about-product__content">
+                <div class="section-title">
+                    <h2 class="section-title__heading">Revolutionary editor</h2>
+                    <p class="section-title__description">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
+                </div>
+
+                <ul class="github-Links">
+                    <li class="github-links__item">
+                        <a href="#" class="github-links__action">
+                        <span class="github-links__icon icon-eye"></span>
+                        Watch</a>
+                        <a href="#" class="github-links__count">1,397</a>
+                    </li>
+                    <li class="github-links__item">
+                        <a href="#" class="github-links__action">
+                        <span class="github-links__icon icon-star"></span>Star</a>
+                        <a href="#" class="github-links__count">1,397</a>
+                    </li>
+                    <li class="github-links__item">
+                        <a href="#" class="github-links__action">
+                        <span class="github-links__icon icon-fork"></span>Fork</a>
+                        <a href="#" class="github-links__count">1,397</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!--<section class="section-features">-->
+    <section class="features">
+        <div class="container">
+            <!--<div class="features">-->
+            <div class="section-title-two">
+                <h2 class="section-title-two__heading"> &lt;Here is what you get&gt; </h2>
+            </div>
+
+            <div class="features-list">
+                <div class="feature-item">
+                    <div class="feature-item__icon-block">
+                        <img class="feature-item__img " alt="Feature code" src="dist/img/features-icons/icon.png">
+                    </div>
+                    <div class="feature-item__about-block">
+                        <h3 class="feature-item__title">Creatred to Make The Web Better</h3>
+                        <p class="feature-item__desc">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui. Aenean cursus imperdiet nisl id fermentum. Aenean cursus imperdiet nisl id fermentum.Aenean cursus imperdiet nisl id fermentum.Aenean cursus imperdiet nisl id fermentum.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-item__icon-block">
+                        <img class="feature-item__img" src="dist/img/features-icons/icon-1.png">
+                    </div>
+                    <div class="feature-item__about-block">
+                        <h3 class="feature-item__title">Incredibly Powerful Tool</h3>
+                        <p class="feature-item__desc">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus feli. Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus feli. Aenean cursus imperdiet nisl id fermentum.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-item__icon-block">
+                        <img class="feature-item__img" src="dist/img/features-icons/icon-2.png">
+                    </div>
+                    <div class="feature-item__about-block">
+                        <h3 class="feature-item__title">Experimental Stuff</h3>
+                        <p class="feature-item__desc">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus feli. Maecenas eu dictum felis, a dignissim nibh. Aenean cursus imperdiet nisl id fermentum.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-item__icon-block">
+                        <img class="feature-item__img" src="dist/img/features-icons/icon-3.png">
+                    </div>
+                    <div class="feature-item__about-block">
+                        <h3 class="feature-item__title">Creatred to Make The Web Better</h3>
+                        <p class="feature-item__desc">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus feli.Maecenas eu dictum felis, a dignissim nibh. Aenean cursus imperdiet nisl id fermentum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="features__img-block">
+                <img src="dist/img/features-icons/feature.png" alt="">
+            </div>
+        </div>
+        <!--</div>-->
+    </section>
+
+    <section class="section-carousel">
+        <div class="container">
+            <div class="carousel">
+                <div class="carousel__list">
+                    <div class="carousel-item">
+                        <div class="carousel-item__author">
+                            <div class="carousel-item__img"></div>
+                            <p class="carousel-item__name">Steven Strange</p>
+                            <p class="carousel-item__nick">@DoctorS</p>
+                        </div>
+                        <p class="carousel-item__comment">
+                            <span class="carousel-item__comment_violet">@Pixelbuddha</span> Suspendisse sodales sem est, in scelerisque felis. Suspendisse sodales sem est, in scelerisque felis. Suspendisse sodales sem est, in scelerisque felis.</p>
+                        <p class="carousel-item__time-post">2 hours ago</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <div class="social-item">
+                        <a href="#" class="social-btn social-btn_github">GitHub</a>
+                        <p class="social-item__followers">7 352 Followers</p>
+                    </div>
+                    <div class="social-item">
+                        <a href="#" class="social-btn social-btn_twitter">Twitter</a>
+                        <p class="social-item__followers">136 312 Followers</p>
+                    </div>
+                    <div class="social-item">
+                        <a href="#" class="social-btn social-btn_facebook">Facebook</a>
+                        <p class="social-item__followers">218 092 Followers</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="mentions">
+        <div class="section-title-three">
+            <h2 class="section-title-three__heading">People Are Talking About Fork</h2>
+        </div>
+
+        <ul class="mentions-list">
+            <li class="mentions-item">
+                <img src="dist/img/companies-logo/smashing-magazine.png" alt="smashing magazine logo" class="mentions-item__img">
+                <p class="mentions-item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.
+                </p>
+            </li>
+            <li class="mentions-item">
+                <img src="dist/img/companies-logo/codrops.png" alt="codrops logo" class="mentions-item__img">
+                <p class="mentions-item__text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.
+                </p>
+            </li>
+            <li class="mentions-item">
+                <img src="dist/img/companies-logo/w-compa...
