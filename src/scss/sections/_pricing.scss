@@ -3,4 +3,10 @@
   background-size: cover;
   height: 85rem;
   margin-top: -1px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+
+  &__content {
+
+  }
 }
