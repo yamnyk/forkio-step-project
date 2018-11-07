@@ -1,14 +1,5 @@
-@include fontFace($montserrat, 'https://fonts.googleapis.com/css?family=Montserrat:200',200);
-@include fontFace($montserrat, 'https://fonts.googleapis.com/css?family=Montserrat:300',300);
-@include fontFace($montserrat, 'https://fonts.googleapis.com/css?family=Montserrat:400',400);
-@include fontFace($montserrat, 'https://fonts.googleapis.com/css?family=Montserrat:500',500);
-@include fontFace($montserrat, 'https://fonts.googleapis.com/css?family=Montserrat:600',600);
-@include fontFace($montserrat, 'https://fonts.googleapis.com/css?family=Montserrat:700',800);
-@include fontFace($montserrat, 'https://fonts.googleapis.com/css?family=Montserrat:800',900);
-@include fontFace($montserrat, 'https://fonts.googleapis.com/css?family=Montserrat:900',700);
-@include fontFace($lato, 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i',400);
-@include fontFace($lato, 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i',700);
-@include fontFace($lato, 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i',900);
+@include fontFace($montserrat, 'https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@include fontFace($lato, 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
 
 .section-title-three {
   &__heading {
@@ -40,11 +31,14 @@
     @include fontPropsWithWeight($montserrat, 6rem, white, 700);
   }
   &-small-info {
-    @include fontPropsWithWeight($montserrat, 1.4rem, white, 200);
+    @include fontProps($montserrat, 1.4rem, white);
     text-transform: uppercase;
   }
   &__description {
     @include fontProps($montserrat, 1.6rem, white);
+  }
+  &__currency {
+    font-weight: 400;
   }
 }
 

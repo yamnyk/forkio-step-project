@@ -31,10 +31,18 @@
 
       &__main-info {
         display: grid;
-        grid-template-rows: 80rem 1fr repeat(auto-fill,1fr);
+        grid-template-rows: 3fr repeat(2,1fr) 8fr;
         justify-content: center;
         align-items: center;
+
+        &_divider {
+          width: 6rem;
+          height: 0.5rem;
+          background-color: $logoViolet;
+          justify-self: center;
+        }
       }
+
     }
   }
 }
