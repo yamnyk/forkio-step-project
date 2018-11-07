@@ -47,7 +47,7 @@
 
   &__small-info {
     display: grid;
-    grid-template-columns: 85rem;
+    grid-template-columns: minmax(20rem, 85rem);
     align-self: center;
     justify-self: center;
 

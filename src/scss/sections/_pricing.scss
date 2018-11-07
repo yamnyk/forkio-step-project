@@ -1,12 +1,26 @@
 .pricing {
   background: url('/img/section-backgrounds/pricing__bg.jpeg') no-repeat top center;
   background-size: cover;
-  height: 85rem;
   margin-top: -1px;
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
 
   &__content {
+    height: 85rem;
+    display: grid;
+    grid-template-rows: 0.2fr 1.8fr;
+    align-items: center;
+    grid-row-gap: 1rem;
+  }
 
+  .pricing-table {
+    height: 56rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(15rem,40rem));
+    justify-items: center;
+    align-items: center;
+
+    .price-plan {
+      display: grid;
+      grid-template-rows: repeat();
+    }
   }
 }
