@@ -14,13 +14,27 @@
   .pricing-table {
     height: 56rem;
     display: grid;
-    grid-template-columns: repeat(4, minmax(15rem,40rem));
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: repeat(4, minmax(10rem,25rem));
+    grid-template-rows: 45rem;
+    grid-column-gap: 1.3rem;
+    justify-content: center;
 
     .price-plan {
+      background-color: $pricingPlanBG;
       display: grid;
-      grid-template-rows: repeat();
+      grid-template-rows: 1fr 5fr;
+      text-align: center;
+
+      &__name {
+        background-color: $pricingPlanTopBG;
+      }
+
+      &__main-info {
+        display: grid;
+        grid-template-rows: 80rem 1fr repeat(auto-fill,1fr);
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }
