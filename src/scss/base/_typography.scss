@@ -34,7 +34,7 @@
     @include fontProps($montserrat, 1.4rem, white);
     text-transform: uppercase;
   }
-  &__description {
+  &__description-item {
     @include fontProps($montserrat, 1.6rem, white);
   }
   &__currency {

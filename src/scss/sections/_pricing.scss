@@ -25,8 +25,14 @@
       grid-template-rows: 1fr 5fr;
       text-align: center;
 
-      &__name {
+      &__title {
         background-color: $pricingPlanTopBG;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &__name {
       }
 
       &__main-info {
@@ -41,6 +47,10 @@
           background-color: $logoViolet;
           justify-self: center;
         }
+      }
+
+      &__description1 {
+        display: grid;
       }
 
     }
