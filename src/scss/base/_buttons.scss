@@ -7,13 +7,13 @@
 
 .price-plan {
   &__buy-btn {
-    display: inline-block;
     padding: 1.5rem 3.5rem;
     text-decoration: none;
     text-transform: uppercase;
     @include fontProps($montserrat, 1.5rem, white);
     background-color: $purchaseBG;
     border-radius: 3rem;
+    margin-bottom: 3rem;
   }
 }
 

@@ -31,8 +31,11 @@
     @include fontPropsWithWeight($montserrat, 1.4rem, white, 200);
     text-transform: uppercase;
   }
-  &__description-item {
-    @include fontProps($montserrat, 1.6rem, white);
+  &__description {
+    &_item {
+      @include fontProps($montserrat, 1.6rem, white);
+      margin-top: 2rem;
+    }
   }
   &__currency {
     font-weight: 400;

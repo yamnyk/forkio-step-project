@@ -37,7 +37,7 @@
 
       &__main-info {
         display: grid;
-        grid-template-rows: 3fr repeat(2,1fr) 8fr;
+        grid-template-rows: 6fr repeat(2,1fr) 8fr;
         justify-content: center;
         align-items: center;
 
@@ -49,8 +49,13 @@
         }
       }
 
-      &__description1 {
+      &__description {
         display: grid;
+        justify-items: center;
+
+        &_item {
+          justify-self: center;
+        }
       }
 
     }
