@@ -1,6 +1,10 @@
 html {
   font-size: 10px;
 }
+.container {
+  width: 128rem;
+  margin: 0 auto;
+}
 @import "base/variables";
 @import "base/mixins";
 @import "base/typography";
