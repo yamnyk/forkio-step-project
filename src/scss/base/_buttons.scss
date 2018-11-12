@@ -13,7 +13,19 @@
     @include fontProps($montserrat, 1.5rem, white);
     background-color: $purchaseBG;
     border-radius: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $priceBtnHover;
+      color: $priceBtnHoverTXT;
+      font-weight: 700;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__active {
+
   }
 }
 
@@ -30,6 +42,14 @@
       @include fontProps($montserrat, 1.3rem, white);
       padding: 1.35rem 4.038rem;
       background-color: $logoViolet;
+      transition: 0.3s all ease-in-out;
+
+      &:hover {
+        background-color: white;
+        border: 0.1rem solid $logoViolet;
+        color: $logoViolet;
+        transition: 0.3s all ease-in-out;
+      }
     }
   }
 }

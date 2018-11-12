@@ -2,7 +2,9 @@ html {
   font-size: 10px;
 }
 .container {
-  width: 128rem;
+  width: 1200px;
+  box-sizing: border-box;
+  padding: 0 10px;
   margin: 0 auto;
 }
 @import "base/variables";

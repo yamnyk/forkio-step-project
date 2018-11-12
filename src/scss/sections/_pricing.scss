@@ -6,20 +6,21 @@
   &__content {
     height: 85rem;
     display: grid;
-    grid-template-rows: 0.2fr 1.8fr;
+    grid-template-rows: 0.8fr 1fr;
     align-items: center;
-    grid-row-gap: 1rem;
   }
 
   .pricing-table {
     height: 56rem;
     display: grid;
-    grid-template-columns: repeat(4, minmax(10rem,25rem));
-    grid-template-rows: 45rem;
+    grid-template-columns: repeat(4, minmax(20rem,25rem));
+    grid-auto-columns: max-content;
     grid-column-gap: 1.3rem;
+    align-items: center;
     justify-content: center;
 
     .price-plan {
+      height: 45rem;
       background-color: $pricingPlanBG;
       display: grid;
       grid-template-rows: 1fr 5fr;
@@ -32,13 +33,18 @@
         justify-content: center;
       }
 
-      &__name {
+      &__active {
+        height: 56rem;
+        background-color: $darkPricePlanBG;
+        .price-plan__title {
+          background-color: $darkPricePlanBG;
+        }
       }
 
       &__main-info {
         display: grid;
         grid-template-rows: 6fr repeat(2,1fr) 8fr;
-        justify-content: center;
+        justify-items: center;
         align-items: center;
 
         &_divider {
@@ -51,7 +57,11 @@
 
       &__description {
         display: grid;
-        justify-items: center;
+
+        &_active {
+          margin-top: 2rem;
+          align-self: self-start;
+        }
 
         &_item {
           justify-self: center;

@@ -9,3 +9,10 @@
   font-size: $size;
   color: $color;
 }
+
+@mixin hoverFocusActive(){
+  text-decoration: none;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}

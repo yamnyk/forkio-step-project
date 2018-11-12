@@ -70,14 +70,27 @@
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
   text-decoration: none;
+
+  &:hover img{
+    content: url("../img/logo_dark.png");
+  }
+
+  &:hover .logo__text_size-s{
+    color: $logoFooterDark;
+  }
+  &:hover .logo__text_dark{
+    color: $logoViolet;
+  }
+
   &_logo-img {
+    align-self: center;
   }
 
   &__text {
-    display: inline-block;
+    align-self: center;
     font-family: $montserrat, sans-serif;
     color: $logoViolet;
     text-transform: uppercase;
@@ -115,7 +128,11 @@
   .vertical-nav {
     &__link {
       text-decoration: none;
-      @include fontProps($montserrat, 1.4rem, $logoViolet)
+      @include fontProps($montserrat, 1.4rem, $logoViolet);
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
