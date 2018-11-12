@@ -27,6 +27,7 @@
 
   .site-contacts {
     display: grid;
+    grid-template-columns: min(22rem);
     grid-template-rows: repeat(2,1fr);
 
     .contact-phone {

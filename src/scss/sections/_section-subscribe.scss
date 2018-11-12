@@ -4,7 +4,7 @@
   .subscribe {
     padding: 4.5rem 0;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: minmax(23rem, 1fr) 2fr;
     align-content: center;
     justify-content: center;
 
