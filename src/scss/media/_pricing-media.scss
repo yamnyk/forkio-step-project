@@ -1,0 +1,26 @@
+@media (min-width: 481px) and (max-width: 992px) {
+  .pricing {
+    &__content {
+      grid-template-rows: 3fr 30fr;
+    }
+
+    .pricing-table {
+      grid-template-columns: repeat(2, minmax(20rem,25rem));
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing {
+    &__content {
+      grid-template-rows: 1fr 15fr;
+    }
+
+    .pricing-table {
+      grid-template-columns: 26rem;
+      grid-template-rows: repeat(auto-fill, minmax(46rem,56rem));
+      grid-row-gap: 2rem;
+    }
+  }
+}

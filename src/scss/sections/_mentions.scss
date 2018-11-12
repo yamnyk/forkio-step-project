@@ -10,7 +10,7 @@
     align-self: center;
   }
 
-  .mentions-list {
+  &-list {
     display: grid;
     grid-template-columns: repeat(3, minmax(15rem, 30rem));
     grid-template-rows: repeat(2, minmax(7rem, 14rem));

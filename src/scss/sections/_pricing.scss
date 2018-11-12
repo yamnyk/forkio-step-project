@@ -3,21 +3,24 @@
   background-size: cover;
   margin-top: -1px;
 
+  .section-title-three {
+    align-self: self-start;
+  }
+
   &__content {
-    height: 85rem;
     display: grid;
-    grid-template-rows: 0.8fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
     align-items: center;
   }
 
   .pricing-table {
-    height: 56rem;
     display: grid;
     grid-template-columns: repeat(4, minmax(20rem,25rem));
     grid-auto-columns: max-content;
     grid-column-gap: 1.3rem;
     align-items: center;
     justify-content: center;
+    margin-bottom: 8rem;
 
     .price-plan {
       height: 45rem;

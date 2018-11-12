@@ -13,15 +13,13 @@
       justify-self: self-start;
     }
 
-    .subscribe-form {
+    &-form {
       display: grid;
       grid-template-columns: 1fr 1fr 0.3fr;
       grid-column-gap: 1rem;
 
       &__input {
         box-sizing: border-box;
-        width: 33.5rem;
-        justify-self: center;
         border: none;
         border-radius: 5rem;
         padding: 1.5rem 3rem;
