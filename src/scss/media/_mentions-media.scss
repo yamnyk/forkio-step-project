@@ -1,0 +1,16 @@
+@media (min-width: 768px) and (max-width: 992px) {
+  .mentions {
+    grid-template-rows: 0.5fr 1.3fr 0.7fr;
+
+    &__small-info {
+      margin: 0 5rem;
+    }
+
+    .mentions-list {
+      grid-template-rows: repeat(3,minmax(7rem, 14rem));
+      grid-template-columns: repeat(2,minmax(15rem, 30rem));
+      grid-row-gap: 0;
+      grid-column-gap: 2rem;
+    }
+  }
+}
